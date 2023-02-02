@@ -82,27 +82,48 @@ export default function Home() {
             alt="BackGround"
             fill
           />
+          {/* <section className={styles.about}>
+        <div className={styles.image1}>
+        <Image
+          src='/whoWeAre.png'
+          alt='Background'
+          fill
+        />
+        </div>
+        <div className={styles.aboutText}>
+           <ul>
+              <li>
+                  <h4>WHAT WE DO</h4>
+              </li>
+              <li>
+                 <h2>Managing Your Urban Forest</h2>
+              </li>
+              <li>
+                 <p>Your trees need maintenance. It’s as simple as that. Whether it’s stump grinding, tree removal, tree trimming, or plant heath care your home deserves the best to maintain your beautiful landscape all while keeping mother nature healthy.</p>
+              </li>
+          </ul>
+        </div>
+        </section> */}
         </section>
         <section className={styles.about}>
-        <ul>
-          <li>
-            <h4>WHAT WE DO</h4>
-          </li>
-          <li>
-            <h2>Managing Your Urban Forest</h2>
-          </li>
-          <li>
-            <p>
-            Your trees need maintenance. It’s as simple as that. Whether it’s stump grinding, tree removal, tree trimming, or plant heath care your home deserves the best to maintain your beautiful landscape all while keeping mother nature healthy.
-            </p>
-          </li>
-        </ul>
+        <div className={styles.aboutText}>
+           <ul>
+              <li>
+                  <h4>WHAT WE DO</h4>
+              </li>
+              <li>
+                 <h2>Managing Your Urban Forest</h2>
+              </li>
+              <li>
+                 <p>Your trees need maintenance. It’s as simple as that. Whether it’s stump grinding, tree removal, tree trimming, or plant heath care your home deserves the best to maintain your beautiful landscape all while keeping mother nature healthy.</p>
+              </li>
+          </ul>
+        </div>
         <div className={styles.image}>
         <Image
           src='/whatWeDoBackground.png'
           alt='Background'
-          width={500}
-          height={400}
+          fill
         />
         </div>
         </section>
