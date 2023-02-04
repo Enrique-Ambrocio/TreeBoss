@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import {BsFillTelephoneFill} from 'react-icons/bs'
 
 
 
@@ -10,12 +11,36 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <section style={{width: "100vw", height:'43vw', position: 'relative'}}>
-          <Image
-            src="/treeboss_hero.png"
-            alt="Tree Boss Logo"
+      <section>
+      <div className={styles.heroContainer}>
+        <Image
+            src='/treeboss_hero.png'
+            alt="BackGround"
             fill
           />
+          <div className={styles.hero}>
+            <ul className={styles.heroText}>
+              <li><p>Working to Improve Tree Health, Beauty & Wealth</p></li>
+              <li><h1>Arborist Services</h1></li>
+            </ul>
+            <ul className={styles.heroButtons}>
+              <li><button className={styles.button1}>GET YOUR ESTIMATE</button></li>
+              <li><button className={styles.button2}>LEARN ABOUT US</button></li>
+            </ul>
+          </div>
+        </div>
+        </section>
+        <section className={styles.callToAction}>
+        <Image
+            src='/aboutBackGround.png'
+            alt="BackGround"
+            fill
+          />
+        <h2>Let's Get To Work</h2>
+          <ul>
+            <li><BsFillTelephoneFill/></li>
+            <li><h4>Call us at (530) 845-1134</h4></li>
+          </ul>
         </section>
         <section className={styles.services}>
           <h2>
@@ -76,13 +101,13 @@ export default function Home() {
                 </li>
             </ul>
         </section>
-        <section style={{width: "100vw", height:'43vw', position: 'relative', backgroundColor: '#408C67', opacity: '1'}}>
-          <Image
-            src="/aboutBackGround.png"
+        <section style={{width: "100%", height:'auto', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}}>
+        <Image
+            src='/aboutBackGround.png'
             alt="BackGround"
             fill
           />
-          {/* <section className={styles.about}>
+        <div className={styles.about1}>
         <div className={styles.image1}>
         <Image
           src='/whoWeAre.png'
@@ -99,11 +124,12 @@ export default function Home() {
                  <h2>Managing Your Urban Forest</h2>
               </li>
               <li>
-                 <p>Your trees need maintenance. It’s as simple as that. Whether it’s stump grinding, tree removal, tree trimming, or plant heath care your home deserves the best to maintain your beautiful landscape all while keeping mother nature healthy.</p>
+                 <p>The Tree Boss is a full-service landscaping company with a straightforward and unique design/build philosophy. We believe in having one landscape designer handle the job from its conception on paper, to the realization on your property. 
+The Tree Boss is made up of a group of highly skilled landscaping professionals who pays a lot of attention to small details.</p>
               </li>
           </ul>
         </div>
-        </section> */}
+        </div>
         </section>
         <section className={styles.about}>
         <div className={styles.aboutText}>
