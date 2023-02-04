@@ -198,6 +198,7 @@ position: relative;
   .heroContainer{
     max-height: none;
   }
+
 }
 
 @media (max-width: 1450px) {
@@ -215,6 +216,20 @@ position: relative;
 
 
   @media (max-width: 800px){
+
+    .callToAction{
+      width: 100%;
+      bottom: 2rem;
+      border-radius: 0rem 0rem 0rem 0rem;
+    }
+
+    .callToAction h2{
+      font-size: 30px;
+    }
+  
+    .callToAction h4 {
+      font-size: 20px;
+    }
 
     .heroContainer{
       display: flex;
