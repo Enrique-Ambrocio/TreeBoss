@@ -1,11 +1,26 @@
-import DesktopNavBar from "./desktopnavbar";
-import MobileNavBar from "./mobilenavbar";
 import styles from './header.module.css'
 import Image from "next/image";
-
+import Link from 'next/link';
+import {GiHamburgerMenu} from 'react-icons/gi'
+import { useState } from 'react';
 
 
 export default function Header() {
+
+    const [displayMenuItems, setDisplayMenuItems] = useState(false)
+
+    // function cancelHandler() {
+    //     setDisplayMenuItems(false)
+    // }
+  
+    const onClickHandler = () => setDisplayMenuItems(value => !value)
+
+    let content;
+
+    if (!displayMenuItems) {
+        content = <GiHamburgerMenu onClick={onClickHandler} />
+    }
+
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
@@ -19,10 +34,47 @@ export default function Header() {
                     <p>Professional Arborist</p>
                 </div>
             </div>
-            <nav>
-                <DesktopNavBar />
-                <MobileNavBar />
+            <div className={styles.toggleButton}>
+            <GiHamburgerMenu onClick={onClickHandler}/>
+            </div>
+            <nav className={styles.navDesktop}>
+            <ul>
+                <li>
+                    <Link href="#" legacyBehavior><a>ABOUT</a></Link>
+                </li>
+                <li>
+                    <Link href="#" legacyBehavior><a>OUR SERVICES</a></Link>
+                </li>
+                <li>
+                    <Link href="#" legacyBehavior><a>SAFETY</a></Link>
+                </li>
+                <li>
+                    <Link href="#" legacyBehavior><a>GALLERY</a></Link>
+                </li>
+                <button>
+                    Contact Us
+                </button>
+            </ul>
             </nav>
+            {displayMenuItems && <nav className={styles.nav}>
+            <ul>
+                <li>
+                    <Link href="#" legacyBehavior><a>ABOUT</a></Link>
+                </li>
+                <li>
+                    <Link href="#" legacyBehavior><a>OUR SERVICES</a></Link>
+                </li>
+                <li>
+                    <Link href="#" legacyBehavior><a>SAFETY</a></Link>
+                </li>
+                <li>
+                    <Link href="#" legacyBehavior><a>GALLERY</a></Link>
+                </li>
+                <button>
+                    Contact Us
+                </button>
+            </ul>
+            </nav>}
         </header>
     )
 }

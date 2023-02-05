@@ -4,7 +4,8 @@
     justify-content:space-evenly;
     width: 100%;
     margin: auto;
-    height: 5.5rem;
+    padding: 1.5rem;
+    height: auto;
 }
 
 .logo {
@@ -18,51 +19,108 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.desktop_nav {
+.navDesktop {
     width: 30rem;
 }
 
-.desktop_nav ul {
+.navDesktop ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: smaller;
+    align-items: center; 
 }
 
-.desktop_nav button {
-    color: aliceblue;
+.navDesktop ul a {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.navDesktop ul button {
     background-color: #408C67;
-    padding: .75rem;
-    width:7.5rem;
+    color: white;
+    padding: 16px 42px;;
     border: none;
 }
 
-.mobile_nav {
+.nav {
+    display: none;
+}
+
+/* .nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul a {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.nav ul button {
+    background-color: #408C67;
+    color: white;
+    padding: 16px 42px;;
+    border: none;
+} */
+
+.toggleButton{
     display: none;
 }
 
 @media (max-width: 1000px) {
 
-    .header {
-        width: 90%;
-        justify-content:space-between;
-    }
-
-    .desktop_nav {
+    .navDesktop {
         display: none;
     }
 
-    .mobile_nav {
+    .logo {
+        width: 15rem;
+    }
+
+    .logo h2 {
+        font-size: 15px;
+    }
+
+    .logo p{
+        font-size: 10px;
+    }
+
+    .toggleButton{
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        right: 8%;
+    }
+
+    .header{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+    }
+
+    .nav ul {
+        margin-top: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: .5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+
     }
 
-    .mobile_nav ul {
-        background-color: antiquewhite;
-        z-index: 1;
+    .nav ul li {
+        margin: .5rem;
+        font-size: 10px;
+        font-family: sans-serif;
     }
 
+    .nav ul button {
+        display: none;
+    }
 }
