@@ -11,8 +11,8 @@ export default function Header() {
             <div className={styles.logo}>
                 <Image
                 src='/treeBossLogo.png'
-                width={70}
-                height={70}
+                width={100}
+                height={50}
                 />
                 <div>
                     <h2>The Tree Boss</h2>

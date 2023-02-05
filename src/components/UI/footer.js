@@ -4,6 +4,7 @@ import {BsTelephone} from 'react-icons/bs'
 import {AiOutlineMail} from 'react-icons/ai'
 import {CiLocationOn} from 'react-icons/ci'
 import styles from './footer.module.css'
+import Image from 'next/image'
 
 export default function Footer() {
 
@@ -14,8 +15,13 @@ export default function Footer() {
         <footer className={styles.footer}>
         <div className={styles.footerOne}>
             <div className={styles.siteInfo}>
+            <Image
+                src='/treeBossLogo.png'
+                width={150}
+                height={70}
+                />
                 <h2>The Tree Boss</h2>
-                <h3>Professional Arborist</h3>
+                <p>Professional Arborist</p>
             </div>
             <div className={styles.contact}>
                 <ul className={styles.infoContainer}>
@@ -49,7 +55,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <h5>Location</h5>
-                            <p>950 Iron Point Road, Suite 210 Folsom, CA 95630</p>
+                            <p>Coming Soon</p>
                         </li>
                      </ul>
                    </li>

@@ -13,6 +13,7 @@
   opacity: 1;
   min-Width:10rem;
   max-height: 40rem;
+  scroll-behavior: smooth;
 }
 
 .hero {
@@ -29,7 +30,7 @@
 }
 
 .heroText p{
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .heroText h1 {
@@ -138,6 +139,10 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
+.project_hero_content_project p{
+  font-family: sans-serif;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -175,6 +180,15 @@
   min-width: 20rem;
   max-width: 30rem;
   height: 15rem;
+}
+
+.aboutText h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+.aboutText p {
+  font-family: sans-serif;
 }
 
 .image1 {
@@ -217,10 +231,19 @@ position: relative;
 
   @media (max-width: 800px){
 
+    .heroText h1 {
+      font-size: 35px;
+    }
+
+    .heroText p{
+      font-size: 15px;
+    }
+
     .callToAction{
       width: 100%;
-      bottom: 2rem;
+      bottom: .5rem;
       border-radius: 0rem 0rem 0rem 0rem;
+      padding: 1rem;
     }
 
     .callToAction h2{
@@ -229,6 +252,10 @@ position: relative;
   
     .callToAction h4 {
       font-size: 20px;
+    }
+
+    .services{
+      padding-top:12%;
     }
 
     .heroContainer{

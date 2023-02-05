@@ -9,7 +9,13 @@
 
 .logo {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 18rem;
+}
+
+.logo h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .desktop_nav {
@@ -55,13 +61,8 @@
     }
 
     .mobile_nav ul {
-        position: absolute;
-        top: 5%;
-        right: 0;
-        visibility: visible;
-        text-align: left;
-        padding: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: antiquewhite;
+        z-index: 1;
     }
 
 }

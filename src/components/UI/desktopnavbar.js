@@ -6,16 +6,16 @@ export default function DesktopNavBar() {
         <div className={styles.desktop_nav}>
             <ul>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>ABOUT</a></Link>
+                    <Link href="#hero" legacyBehavior><a>ABOUT</a></Link>
                 </li>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>OUR SERVICES</a></Link>
+                    <Link href="#services" legacyBehavior><a>OUR SERVICES</a></Link>
                 </li>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>SAFETY</a></Link>
+                    <Link href="#whoWeAre" legacyBehavior><a>SAFETY</a></Link>
                 </li>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>GALLERY</a></Link>
+                    <Link href="" legacyBehavior><a>GALLERY</a></Link>
                 </li>
                 <button>
                     Contact Us

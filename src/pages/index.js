@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <main className={styles.main}>
       <section>
-      <div className={styles.heroContainer}>
+      <div className={styles.heroContainer} id="hero">
         <Image
             src='/treeboss_hero.png'
             alt="BackGround"
@@ -42,7 +42,7 @@ export default function Home() {
             <li><h4>Call us at (530) 845-1134</h4></li>
           </ul>
         </section>
-        <section className={styles.services}>
+        <section className={styles.services} id="services">
           <h2>
             Our Services
           </h2>
@@ -101,7 +101,7 @@ export default function Home() {
                 </li>
             </ul>
         </section>
-        <section style={{width: "100%", height:'auto', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}}>
+        <section style={{width: "100%", height:'auto', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}} id="whoWeAre">
         <Image
             src='/aboutBackGround.png'
             alt="BackGround"
@@ -118,10 +118,10 @@ export default function Home() {
         <div className={styles.aboutText}>
            <ul>
               <li>
-                  <h4>WHAT WE DO</h4>
+                  <h4>WHO WE ARE</h4>
               </li>
               <li>
-                 <h2>Managing Your Urban Forest</h2>
+                 <h2>The Tree Boss</h2>
               </li>
               <li>
                  <p>The Tree Boss is a full-service landscaping company with a straightforward and unique design/build philosophy. We believe in having one landscape designer handle the job from its conception on paper, to the realization on your property. 
@@ -131,7 +131,7 @@ The Tree Boss is made up of a group of highly skilled landscaping professionals 
         </div>
         </div>
         </section>
-        <section className={styles.about}>
+        <section className={styles.about} id="about">
         <div className={styles.aboutText}>
            <ul>
               <li>

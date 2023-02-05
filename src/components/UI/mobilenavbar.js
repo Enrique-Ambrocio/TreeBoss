@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
-import { BiMenu } from 'react-icons/bi'
+import {GiHamburgerMenu} from 'react-icons/gi'
 import { MdCancel } from 'react-icons/md'
 import styles from './header.module.css'
 
@@ -19,7 +19,7 @@ export default function MobileNavBar() {
     let content;
 
     if (!displayMenuItems) {
-        content = <BiMenu onClick={onClickHandler} />
+        content = <GiHamburgerMenu onClick={onClickHandler} />
     }
 
 
@@ -28,16 +28,16 @@ export default function MobileNavBar() {
             <MdCancel onClick={cancelHandler} />
             <ul>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>ABOUT</a></Link>
+                    <Link href="#hero" legacyBehavior><a>ABOUT</a></Link>
                 </li>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>OUR SERVICES</a></Link>
+                    <Link href="#services" legacyBehavior><a>OUR SERVICES</a></Link>
                 </li>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>SAFETY</a></Link>
+                    <Link href="about" legacyBehavior><a>SAFETY</a></Link>
                 </li>
                 <li>
-                    <Link href="/blog" legacyBehavior><a>GALLERY</a></Link>
+                    <Link href="whoWeAre" legacyBehavior><a>GALLERY</a></Link>
                 </li>
             </ul>
         </Fragment>
