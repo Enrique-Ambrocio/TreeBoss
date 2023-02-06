@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import {BsFillTelephoneFill} from 'react-icons/bs'
+import Link from 'next/link'
 
 
 
@@ -12,7 +13,7 @@ export default function Home() {
     <>
       <main className={styles.main}>
       <section>
-      <div className={styles.heroContainer} id="hero">
+      <div className={styles.heroContainer}>
         <Image
             src='/treeboss_hero.png'
             alt="BackGround"
@@ -30,7 +31,7 @@ export default function Home() {
           </div>
         </div>
         </section>
-        <section className={styles.callToAction}>
+        <section className={styles.callToAction} name="services">
         <Image
             src='/aboutBackGround.png'
             alt="BackGround"
@@ -39,10 +40,10 @@ export default function Home() {
         <h2>Let's Get To Work</h2>
           <ul>
             <li><BsFillTelephoneFill/></li>
-            <li><h4>Call us at (530) 845-1134</h4></li>
+            <li><a href={`tel:${5308451134}`}>Call (530) 845-1134</a></li>
           </ul>
         </section>
-        <section className={styles.services} id="services">
+        <section className={styles.services}>
           <h2>
             Our Services
           </h2>
@@ -101,7 +102,7 @@ export default function Home() {
                 </li>
             </ul>
         </section>
-        <section style={{width: "100%", height:'auto', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}} id="whoWeAre">
+        <section style={{width: "100%", height:'auto', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}} name="about">
         <Image
             src='/aboutBackGround.png'
             alt="BackGround"
@@ -125,13 +126,13 @@ export default function Home() {
               </li>
               <li>
                  <p>The Tree Boss is a full-service landscaping company with a straightforward and unique design/build philosophy. We believe in having one landscape designer handle the job from its conception on paper, to the realization on your property. 
-The Tree Boss is made up of a group of highly skilled landscaping professionals who pays a lot of attention to small details.</p>
+The Tree Boss is made up of a group of highly skilled landscaping professionals who pay a lot of attention to small details.</p>
               </li>
           </ul>
         </div>
         </div>
         </section>
-        <section className={styles.about} id="about">
+        <section className={styles.about} id="safety">
         <div className={styles.aboutText}>
            <ul>
               <li>

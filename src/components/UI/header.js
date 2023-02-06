@@ -40,13 +40,13 @@ export default function Header() {
             <nav className={styles.navDesktop}>
             <ul>
                 <li>
-                    <Link href="#" legacyBehavior><a>ABOUT</a></Link>
+                    <Link href="#about" legacyBehavior><a>ABOUT</a></Link>
                 </li>
                 <li>
-                    <Link href="#" legacyBehavior><a>OUR SERVICES</a></Link>
+                    <Link href="#services" legacyBehavior><a>OUR SERVICES</a></Link>
                 </li>
                 <li>
-                    <Link href="#" legacyBehavior><a>SAFETY</a></Link>
+                    <Link href="#safety" legacyBehavior><a>SAFETY</a></Link>
                 </li>
                 <li>
                     <Link href="#" legacyBehavior><a>GALLERY</a></Link>
@@ -58,16 +58,16 @@ export default function Header() {
             </nav>
             {displayMenuItems && <nav className={styles.nav}>
             <ul>
-                <li>
-                    <Link href="#" legacyBehavior><a>ABOUT</a></Link>
+                <li onClick={onClickHandler}>
+                    <Link href="#about" legacyBehavior><a>ABOUT</a></Link>
                 </li>
-                <li>
-                    <Link href="#" legacyBehavior><a>OUR SERVICES</a></Link>
+                <li onClick={onClickHandler}>
+                    <Link href="#services" legacyBehavior><a>OUR SERVICES</a></Link>
                 </li>
-                <li>
-                    <Link href="#" legacyBehavior><a>SAFETY</a></Link>
+                <li onClick={onClickHandler}>
+                    <Link href="#safety" legacyBehavior><a>SAFETY</a></Link>
                 </li>
-                <li>
+                <li onClick={onClickHandler}>
                     <Link href="#" legacyBehavior><a>GALLERY</a></Link>
                 </li>
                 <button>

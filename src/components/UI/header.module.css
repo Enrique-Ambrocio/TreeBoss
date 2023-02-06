@@ -34,11 +34,25 @@
     font-family: sans-serif;
 }
 
+.navDesktop ul a:hover{
+    font-weight: bold;
+}
+
+.navDesktop ul a:active{
+    
+    text-decoration: none;
+}
+
 .navDesktop ul button {
     background-color: #408C67;
     color: white;
     padding: 16px 42px;;
     border: none;
+}
+
+.navDesktop ul button:hover {
+    background-color: #367C5A;
+    cursor: pointer;
 }
 
 .nav {
@@ -111,12 +125,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
+        transition:step-start;
+        animation: fadeIn .5s;
     }
 
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        50% {opacity: .5;}
+        100% { opacity: 1; }
+      }
+
     .nav ul li {
-        margin: .5rem;
-        font-size: 10px;
+        margin: .65rem;
+        font-size: 12px;
         font-family: sans-serif;
     }
 
