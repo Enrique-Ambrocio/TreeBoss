@@ -21,9 +21,9 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.logo}>
                 <Image
-                src='/whoWeAre.png'
-                width={100}
-                height={50}
+                src='/logothetreeboss.png'
+                width={120}
+                height={100}
                 />
                 <div>
                     <h2>The Tree Boss</h2>
