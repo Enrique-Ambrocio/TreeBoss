@@ -8,10 +8,6 @@ import { useState } from 'react';
 export default function Header() {
 
     const [displayMenuItems, setDisplayMenuItems] = useState(false)
-
-    // function cancelHandler() {
-    //     setDisplayMenuItems(false)
-    // }
   
     const onClickHandler = () => setDisplayMenuItems(value => !value)
 
@@ -25,7 +21,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.logo}>
                 <Image
-                src='/treeBossLogo.png'
+                src='/whoWeAre.png'
                 width={100}
                 height={50}
                 />
