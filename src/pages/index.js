@@ -124,7 +124,7 @@ export default function Home() {
                  <h2>The Tree Boss</h2>
               </li>
               <li>
-                 <p>The Tree Boss is a full-service landscaping company with a straightforward and unique design/build philosophy. We believe in having one landscape designer handle the job from its conception on paper, to the realization on your property. 
+                 <p>The Tree Boss is a tree-service company with a straightforward and unique design/build philosophy. We believe in having one landscape designer handle the job from its conception on paper, to the realization on your property. 
 The Tree Boss is made up of a group of highly skilled landscaping professionals who pay a lot of attention to small details.</p>
               </li>
           </ul>

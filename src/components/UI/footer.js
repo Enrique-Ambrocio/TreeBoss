@@ -16,12 +16,10 @@ export default function Footer() {
         <div className={styles.footerOne}>
             <div className={styles.siteInfo}>
             <Image
-                src='/treeBossLogo.png'
-                width={150}
-                height={70}
+                src='/logothetreeboss.png'
+                width={300}
+                height={190}
                 />
-                <h2>The Tree Boss</h2>
-                <p>Professional Arborist</p>
             </div>
             <div className={styles.contact}>
                 <ul className={styles.infoContainer}>
