@@ -56,7 +56,7 @@ export default function Home() {
                           <h3>Tree Removal Services</h3>
                         </li>
                         <li>
-                            <p>We focus on great services and best in safety handling</p>
+                            <p>We focus on removing your tree in a prompt, safe, and efficient manner.</p>
                         </li>
                     </ul>
                 </li>
@@ -66,10 +66,10 @@ export default function Home() {
                         <Image src="/treePlanting.png" alt="Tree Planting" width={75} height={75}/>
                         </li>
                         <li>
-                          <h3>Land Maintenance</h3>
+                          <h3>Tree Care</h3>
                         </li>
                         <li>
-                            <p>We focus on great services and best in safety handling</p>
+                            <p>Our expertise is to provide safe tree pruning for the health of the tree.</p>
                         </li>
                     </ul>
                 </li>
@@ -79,10 +79,10 @@ export default function Home() {
                         <Image src="/treeCare.png" alt="Tree Care" width={75} height={75}/>
                         </li>
                         <li>
-                          <h3>Tree Care</h3>
+                          <h3>Hazard/Storm Tree Removals</h3>
                         </li>
                         <li>
-                            <p>We focus on great services and best in safety handling</p>
+                            <p>We have over 5 years of experience in hazard tree removals.</p>
                         </li>
                     </ul>
                 </li>
@@ -92,10 +92,10 @@ export default function Home() {
                         <Image src="/fireWoodDelivery.png" alt="Fire Wood Delivery" width={75} height={75}/>
                         </li>
                         <li>
-                          <h3>Firewood Delivery</h3>
+                          <h3>Safety</h3>
                         </li>
                         <li>
-                            <p>We focus on great services and best in safety handling</p>
+                            <p>Safety is our company core. Our leadership values safety at every stage.</p>
                         </li>
                     </ul>
                 </li>
@@ -125,7 +125,7 @@ export default function Home() {
               </li>
               <li>
                  <p>The Tree Boss is a tree-service company with a straightforward and unique design/build philosophy. We believe in having one landscape designer handle the job from its conception on paper, to the realization on your property. 
-The Tree Boss is made up of a group of highly skilled landscaping professionals who pay a lot of attention to small details.</p>
+The Tree Boss is made up of a group of highly skilled professional arborists who pay a lot of attention to small details.</p>
               </li>
           </ul>
         </div>

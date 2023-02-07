@@ -17,7 +17,7 @@ export default function Footer() {
             <div className={styles.siteInfo}>
             <Image
                 src='/logothetreeboss.png'
-                width={300}
+                width={280}
                 height={190}
                 />
             </div>
@@ -62,14 +62,14 @@ export default function Footer() {
                    <li>
                       <h3>Get Connected</h3>
                       <ul className={styles.infoSocials}>
-                          <li><a><AiFillInstagram/></a></li>
-                          <li><a><FaFacebook/></a></li>
+                          <li><a href='https://www.instagram.com/thetreeboss_/?igshid=YmMyMTA2M2Y%3D'><AiFillInstagram/></a></li>
+                          <li><a href='https://www.facebook.com/people/The-Tree-Boss/100083199107350/'><FaFacebook/></a></li>
                       </ul>
                       </li>
                 </ul>
             </div>
             </div>
-            <div>
+            <div className={styles.copyRight}>
                 <p>© 2023 The tree boss | All Rights Reserved</p>
             </div>
         </footer>

@@ -22,7 +22,7 @@ export default function Header() {
             <div className={styles.logo}>
                 <Image
                 src='/logothetreeboss.png'
-                width={120}
+                width={125}
                 height={100}
                 />
                 <div>

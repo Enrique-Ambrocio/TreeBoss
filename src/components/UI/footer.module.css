@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     background-color: #1F1F1F;
     padding-top: 5rem;
-    height: 25rem;
+    height: auto;
     width: 100%;
 }
 
@@ -75,6 +75,10 @@
     width: 3rem;
 }
 
+.infoSocials a:hover {
+    color: gray;
+}
+
 .infoImage {
     margin-right: 1rem;
 }
@@ -88,17 +92,17 @@
     height: 12rem;
 }
 
+.copyRight{
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 950px) {
     .footerOne {
         flex-direction: column;
     }
 
     .siteInfo {
-        margin-bottom: 4rem;
-    }
-
-    .footer{
-        height: 35rem;
+        margin-bottom: 1rem;
     }
 }
 
