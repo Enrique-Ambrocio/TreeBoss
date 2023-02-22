@@ -25,10 +25,6 @@ export default function Header() {
                 width={125}
                 height={100}
                 />
-                <div>
-                    <h2>The Tree Boss</h2>
-                    <p>Professional Arborist</p>
-                </div>
             </div>
             <div className={styles.toggleButton}>
             <GiHamburgerMenu onClick={onClickHandler}/>

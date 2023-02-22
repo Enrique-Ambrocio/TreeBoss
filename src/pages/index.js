@@ -2,8 +2,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import {BsFillTelephoneFill} from 'react-icons/bs'
-
-
+import {PopupButton} from '@typeform/embed-react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +23,7 @@ export default function Home() {
               <li><h1>Arborist Services</h1></li>
             </ul>
             <ul className={styles.heroButtons}>
-              <li><button className={styles.button1}>GET YOUR ESTIMATE</button></li>
+              <li><PopupButton id='SIzkdc6f' className={styles.button1}>GET YOUR ESTIMATE</PopupButton></li>
               <li><button className={styles.button2}>LEARN ABOUT US</button></li>
             </ul>
           </div>

@@ -84,6 +84,19 @@
   dependencies:
     tslib "^2.4.0"
 
+"@typeform/embed-react@^2.15.0":
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed-react/-/embed-react-2.15.0.tgz#4f283c311ae8a5f75a563291747faebbd4f2e5a4"
+  integrity sha512-OO3gT96yMv+vMflXjYbsSS84qizjfkdCO39Y5kPalpRVvydCgT3KoxM+tdrWY6L2ciD1q+yQs1NZbYh63xFkuw==
+  dependencies:
+    "@typeform/embed" "2.8.0"
+    fast-deep-equal "^3.1.3"
+
+"@typeform/embed@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-2.8.0.tgz#45456b47103d27e818e426d782e0af0976909db8"
+  integrity sha512-+64uxHXbOefA9euw9gQUZ3WAvh+61wH6Vbl3x9WYQ3tAY2iM9gPTYhfxPDMdx/79KuRMIbHUKWpTD6PflaWy8w==
+
 caniuse-lite@^1.0.30001406:
   version "1.0.30001448"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001448.tgz#ca7550b1587c92a392a2b377cd9c508b3b4395bf"
@@ -93,6 +106,11 @@ client-only@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
+
+fast-deep-equal@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
