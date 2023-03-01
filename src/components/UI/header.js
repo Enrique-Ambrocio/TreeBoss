@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { useState } from 'react';
+import { PopupButton } from '@typeform/embed-react';
 
 
 export default function Header() {
@@ -41,11 +42,9 @@ export default function Header() {
                     <Link href="#safety" legacyBehavior><a>SAFETY</a></Link>
                 </li>
                 <li>
-                    <Link href="#" legacyBehavior><a>GALLERY</a></Link>
+                    <Link href="#gallery" legacyBehavior><a>GALLERY</a></Link>
                 </li>
-                <button>
-                    Contact Us
-                </button>
+                <li><PopupButton id='SIzkdc6f' className={styles.button2}>Contact Us</PopupButton></li>
             </ul>
             </nav>
             {displayMenuItems && <nav className={styles.nav}>
@@ -60,7 +59,7 @@ export default function Header() {
                     <Link href="#safety" legacyBehavior><a>SAFETY</a></Link>
                 </li>
                 <li onClick={onClickHandler}>
-                    <Link href="#" legacyBehavior><a>GALLERY</a></Link>
+                    <Link href="#gallery" legacyBehavior><a>GALLERY</a></Link>
                 </li>
                 <button>
                     Contact Us

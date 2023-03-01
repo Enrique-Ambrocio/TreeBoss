@@ -81,6 +81,11 @@
     display: none;
 }
 
+.button2{
+    width: 10rem;
+    text-align: center;
+}
+
 @media (max-width: 1000px) {
 
     .navDesktop {

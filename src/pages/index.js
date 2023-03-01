@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {PopupButton} from '@typeform/embed-react'
 import ImageSlider from '@/components/slider/ImageSlider'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +26,7 @@ export default function Home() {
             </ul>
             <ul className={styles.heroButtons}>
               <li><PopupButton id='SIzkdc6f' className={styles.button1}>GET YOUR ESTIMATE</PopupButton></li>
-              <li><button className={styles.button2}>LEARN ABOUT US</button></li>
+              <li><button className={styles.button2} ><Link href="#services" legacyBehavior><a>LEARN ABOUT US</a></Link></button></li>
             </ul>
           </div>
         </div>
@@ -153,7 +154,7 @@ The Tree Boss is made up of a group of highly skilled professional arborists who
         />
         </div>
         </section>
-        <section style={{width: "100%", height:'50rem', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}}>
+        <section style={{width: "100%", height:'50rem', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}} name="gallery">
         <Image
         src='/aboutBackGround.png'
         alt="BackGround"
