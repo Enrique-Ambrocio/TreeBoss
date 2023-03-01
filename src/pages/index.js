@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {PopupButton} from '@typeform/embed-react'
+import ImageSlider from '@/components/slider/ImageSlider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -151,6 +152,17 @@ The Tree Boss is made up of a group of highly skilled professional arborists who
           fill
         />
         </div>
+        </section>
+        <section style={{width: "100%", height:'50rem', position: 'relative', backgroundColor: '#408C67', opacity: '1', minWidth:'10rem'}}>
+        <Image
+        src='/aboutBackGround.png'
+        alt="BackGround"
+        fill
+        />
+        <div className={styles.gallery}>
+          <h2>Gallery</h2>
+        </div>
+          <ImageSlider/>
         </section>
       </main>
     </>

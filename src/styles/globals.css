@@ -70,3 +70,19 @@ a {
     color-scheme: dark;
   }
 } */
+
+.container-with-dots{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 75%;
+  min-width: 20rem;
+  margin: auto;
+  background-color: white;
+}
+
+.image-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+}
